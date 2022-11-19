@@ -1,3 +1,8 @@
+<!-- Kyler Rasnick -->
+<!-- 11/19/2022 -->
+<!-- CIT 140 -->
+<!-- Project 5 -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,10 +10,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- importing bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
 
     <!-- importing handlebars -->
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
@@ -19,15 +24,15 @@
 <body>
     <div class="container">
         <h2>Select a Major</h2>
-        <button type='button class="btn btn-primary" onClick="getData('cit')">CIT Major</button>
-        <button type='button class="btn btn-primary" onClick="getData('bus')">Business Majors</button>
+        <button type='button' class="btn btn-primary" onClick="getData('CIT')">CIT Major</button>
+        <button type='button' class="btn btn-primary" onClick="getData('BUS')">Business Majors</button>
         <h3>We filter our dataset by major</h3>
-    <div id="majorsTable"></div>
-
+        <div id="majorsTable"></div>
     </div>
 
 </body>
 
+<!-- HTML for handlebars table -->
 <script type="text/x-handlebars-template" id="tableTemplate">
     <table class="table table-striped">
         <tr><th>Name</th><th>Major</th><th>Midterm</th><th>Final</th></tr>
@@ -38,5 +43,4 @@
             {{/each}}
     </table>
  </script>
-
 </html>
