@@ -1,3 +1,4 @@
+// Asyncronous function to get the data from JSON file and display w/ bootstrap table
 async function getData(selected_major) {
     var response = await fetch('cit5students.json');
     if(response.ok) {
